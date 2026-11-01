@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <!-- 인사말 배경: 코드 편집기 화면 느낌의 그림 -->
+  <defs>
+    <!-- 배경 바탕색: 짙은 남색 그라데이션 -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1321"/>
+      <stop offset="1" stop-color="#1a2238"/>
+    </linearGradient>
+    <!-- 모눈종이 같은 옅은 격자 -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+
+  <!-- 왼쪽 코드 (HTML) -->
+  <g font-family="Consolas, 'Courier New', monospace" font-size="22" opacity="0.35" xml:space="preserve">
+    <text x="60" y="90" fill="#5c6a8a">01</text><text x="120" y="90" fill="#7fdbca">&lt;!DOCTYPE html&gt;</text>
+    <text x="60" y="130" fill="#5c6a8a">02</text><text x="120" y="130" fill="#7fdbca">&lt;html <tspan fill="#c792ea">lang</tspan>=<tspan fill="#ecc48d">"ko"</tspan>&gt;</text>
+    <text x="60" y="170" fill="#5c6a8a">03</text><text x="120" y="170" fill="#7fdbca">  &lt;head&gt;</text>
+    <text x="60" y="210" fill="#5c6a8a">04</text><text x="120" y="210" fill="#7fdbca">    &lt;title&gt;<tspan fill="#d6deeb">홍길동</tspan>&lt;/title&gt;</text>
+    <text x="60" y="250" fill="#5c6a8a">05</text><text x="120" y="250" fill="#7fdbca">  &lt;/head&gt;</text>
+    <text x="60" y="290" fill="#5c6a8a">06</text><text x="120" y="290" fill="#7fdbca">  &lt;body&gt;</text>
+    <text x="60" y="330" fill="#5c6a8a">07</text><text x="120" y="330" fill="#7fdbca">    &lt;h1 <tspan fill="#c792ea">class</tspan>=<tspan fill="#ecc48d">"hero-name"</tspan>&gt;</text>
+    <text x="60" y="370" fill="#5c6a8a">08</text><text x="120" y="370" fill="#d6deeb">      Hello, World!</text>
+    <text x="60" y="410" fill="#5c6a8a">09</text><text x="120" y="410" fill="#7fdbca">    &lt;/h1&gt;</text>
+    <text x="60" y="450" fill="#5c6a8a">10</text><text x="120" y="450" fill="#7fdbca">  &lt;/body&gt;</text>
+    <text x="60" y="490" fill="#5c6a8a">11</text><text x="120" y="490" fill="#7fdbca">&lt;/html&gt;</text>
+  </g>
+
+  <!-- 오른쪽 코드 (JavaScript) -->
+  <g font-family="Consolas, 'Courier New', monospace" font-size="22" opacity="0.3" xml:space="preserve">
+    <text x="900" y="460" fill="#637777">// 오늘도 한 줄씩 성장 중</text>
+    <text x="900" y="500" fill="#c792ea">const <tspan fill="#82aaff">dream</tspan><tspan fill="#d6deeb"> = </tspan><tspan fill="#ecc48d">"개발자"</tspan><tspan fill="#d6deeb">;</tspan></text>
+    <text x="900" y="540" fill="#c792ea">function <tspan fill="#82aaff">study</tspan><tspan fill="#d6deeb">(day) {</tspan></text>
+    <text x="900" y="580" fill="#c792ea">  while <tspan fill="#d6deeb">(day &lt; </tspan><tspan fill="#f78c6c">365</tspan><tspan fill="#d6deeb">) {</tspan></text>
+    <text x="900" y="620" fill="#d6deeb">    code(); learn(); day++;</text>
+    <text x="900" y="660" fill="#d6deeb">  }</text>
+    <text x="900" y="700" fill="#c792ea">  return <tspan fill="#d6deeb">dream;</tspan></text>
+    <text x="900" y="740" fill="#d6deeb">}</text>
+    <text x="900" y="780" fill="#82aaff">study<tspan fill="#d6deeb">(</tspan><tspan fill="#f78c6c">1</tspan><tspan fill="#d6deeb">);</tspan></text>
+  </g>
+
+  <!-- 장식용 큰 괄호 기호 -->
+  <text x="1180" y="300" font-family="Consolas, 'Courier New', monospace" font-size="260" fill="#82aaff" opacity="0.07">&lt;/&gt;</text>
+  <text x="80" y="820" font-family="Consolas, 'Courier New', monospace" font-size="200" fill="#c792ea" opacity="0.06">{ }</text>
+</svg>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 문자 인코딩: 한글이 깨지지 않도록 UTF-8로 지정 -->
+  <meta charset="UTF-8">
+  <!-- 휴대폰에서도 화면 폭에 맞게 보이도록 설정 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홍길동 | 자기소개</title>
+  <!-- 디자인(꾸미기)은 style.css 파일에 있음 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== 상단 메뉴 ===== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">홍길동</a>
+
+      <!-- 메뉴 링크: href="#아이디"를 누르면 해당 섹션으로 이동 -->
+      <nav class="nav">
+        <a href="#about">소개</a>
+        <a href="#skills">기술</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#contact">연락처</a>
+      </nav>
+
+      <!-- 메뉴 오른쪽 버튼 묶음 -->
+      <div class="header-actions">
+        <!-- 다크 모드 전환 버튼: 아이콘과 설명은 script.js가 현재 모드에 맞게 바꿈 -->
+        <button class="theme-toggle" aria-label="다크 모드로 전환">🌙</button>
+
+        <!-- 모바일에서만 보이는 햄버거 버튼 (메뉴 열기/닫기) -->
+        <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== 인사말 (첫 화면) ===== -->
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="hero-hello">안녕하세요, 저는</p>
+        <h1 class="hero-name">홍길동</h1>
+        <!-- 한 줄 소개: script.js가 문장을 한 글자씩 타이핑하고 지움 -->
+        <p class="hero-desc">
+          <span class="typing-text"></span><span class="typing-cursor">|</span>
+        </p>
+        <a href="#contact" class="btn">연락하기</a>
+      </div>
+    </section>
+
+    <!-- ===== 소개 ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">소개</h2>
+        <p>
+          컴퓨터공학을 공부하고 있는 신입생 홍길동입니다.
+          고등학교 때 간단한 게임을 만들어 보면서 프로그래밍에 흥미를 갖게 되었습니다.
+          지금은 웹 개발을 배우며, 직접 만든 서비스를 많은 사람이 쓰는 날을 꿈꾸고 있습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 기술 (막대 그래프) ===== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">기술</h2>
+        <!-- data-level 값(0~100)을 script.js가 읽어서 막대 길이로 바꿔 줌 -->
+        <ul class="skills">
+          <li class="skill">
+            <div class="skill-head"><span>HTML</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+          </li>
+          <li class="skill">
+            <div class="skill-head"><span>CSS</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+          </li>
+          <li class="skill">
+            <div class="skill-head"><span>JavaScript</span><span>50%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="50"></div></div>
+          </li>
+          <li class="skill">
+            <div class="skill-head"><span>Python</span><span>60%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="60"></div></div>
+          </li>
+          <li class="skill">
+            <div class="skill-head"><span>AI</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 프로젝트 (카드 2개) ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">프로젝트</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>숫자 맞히기 게임</h3>
+            <p>컴퓨터가 고른 숫자를 힌트를 보며 맞히는 간단한 게임입니다.</p>
+            <span class="tag">Python</span>
+          </article>
+          <article class="card">
+            <h3>자기소개 홈페이지</h3>
+            <p>지금 보고 계신 이 사이트입니다. Claude Code와 함께 만들었습니다.</p>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 연락처 ===== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">연락처</h2>
+        <ul class="contact-list">
+          <li>이메일: <a href="mailto:honggildong@example.com">honggildong@example.com</a></li>
+          <li>GitHub: <a href="https://github.com/" target="_blank" rel="noopener">github.com/honggildong</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 푸터 ===== -->
+  <footer class="footer">
+    <!-- 연도는 script.js가 자동으로 채움 -->
+    <p>© <span id="year"></span> 홍길동. All rights reserved.</p>
+  </footer>
+
+  <!-- 동작(움직임)은 script.js 파일에 있음. 페이지를 다 읽은 뒤 실행되도록 맨 아래에 둠 -->
+  <script src="script.js"></script>
+</body>
+</html>
